@@ -1,8 +1,15 @@
 #include <iostream>
 using namespace std;
-int Main ()
-{
-int a,b,r;
-cin>>a>>b;
-R=a-b;
-cout<<a mayor y b menor
+
+int main() {
+    int A, B, R;
+
+    cin >> A >> B;
+
+    R = A - B;
+
+    cout << "A mayor y B menor: " << ((R > 0) && (A > B)) << endl;
+    cout << "B mayor y A menor: " << ((R < 0) && (B > A)) << endl;
+
+    return 0;
+}
