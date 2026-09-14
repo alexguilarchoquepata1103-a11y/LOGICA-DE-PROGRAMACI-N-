@@ -1,0 +1,8 @@
+#include <iostream>
+using namespace std;
+int Main ()
+{
+int a,b,r;
+cin>>a>>b;
+R=a-b;
+cout<<a mayor y b menor
