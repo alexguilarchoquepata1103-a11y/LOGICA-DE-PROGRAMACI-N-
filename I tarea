@@ -12,4 +12,4 @@ int main() {
     cout << "B mayor y A menor: " << ((R < 0) && (B > A)) << endl;
 
     return 0;
-}
+} 
