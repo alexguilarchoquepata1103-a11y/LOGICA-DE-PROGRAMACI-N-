@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    bool A, B;
+    
+    cout << "Ingresa A y B 0 o 1: ";
+    cin >> A >> B;
+    
+    // Simulando OR con if
+    if (A == 1 || B == 1)  // esto es el OR
+    {
+        cout << "Resultado OR: 1" << endl;
+    }
+    else
+    {
+        cout << "Resultado OR: 0" << endl;
+    }
+    
+    // Tabla de verdad completa
+    cout << "\nTabla de verdad OR:" << endl;
+    cout << "0 OR 0 = " << (0 || 0) << endl;
+    cout << "0 OR 1 = " << (0 || 1) << endl;
+    cout << "1 OR 0 = " << (1 || 0) << endl;
+    cout << "1 OR 1 = " << (1 || 1) << endl;
+    
+    return 0;
+}
