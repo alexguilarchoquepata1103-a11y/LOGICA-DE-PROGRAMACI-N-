@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int A = 10;
+    int B = 4;
+    int C;
+    
+    C = A % B * 3 + B - 1;  // 10%4=2, 2*3=6, 6+4-1=9
+    
+    cout << "C = " << C; // imprime: C = 9
+    
+    return 0;
+}
