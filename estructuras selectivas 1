@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main(){
+
+    int n;
+    cin >> n;
+    IF (n%2 == 0);
+    {
+        cout << "par";
+    }
+    else
+    {
+        cout << "par";
+    }
+    return 0;
+}
