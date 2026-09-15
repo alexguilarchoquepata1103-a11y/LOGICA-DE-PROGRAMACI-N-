@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    long long A, B;  // A = ganancias, B = perdidas
+    cin >> A >> B;
+    
+    if (A > B)
+    {
+        cout << "El negocio si va a jalar " << A;
+    }
+    else
+    {
+        cout << "Dejalo ya esta muerto " << B;
+    }
+    
+    return 0;
+}
