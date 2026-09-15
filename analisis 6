@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double A = 12;  // uso double para que salga decimal
+    double B = 5;
+    double C;
+    
+    C = A / B + (A % 5) * 2;  // Ojo: A%B solo funciona con enteros
+    
+    cout << "C = " << C; // imprime: C = 6.4
+    
+    return 0;
+}
