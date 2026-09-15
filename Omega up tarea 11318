@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int A, B;
+    cin >> A >> B;
+    
+    if (A + B == 5)  // ¿A + B es igual a 5?
+    {
+        B = B + 3;           // Súmale 3 a B
+        cout << 2 * A + B;   // Imprime 2A + B
+    }
+    else
+    {
+        A = A - 1;  // Réstale 1 a A
+        
+        if ((7 * A + B) % 2 == 0)  // ¿7A + B es par?
+        {
+            cout << A - B;  // Imprime A - B
+        }
+        else
+        {
+            cout << A * B;  // Im
