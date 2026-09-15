@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int edad;
+    bool a, b;
+    
+    cin >> a >> b;
+    
+    cout << a << " << b;
+    
+    bool resultado = a && b;
+    bool resultado2 = a || b;
+    
+    return 0;
+}
