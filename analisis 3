@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int A = 5;
+    int B = 10;
+    
+    A += 3;  // A = 8
+    B -= 4;  // B = 6
+    
+    cout << A << ", " << B; // imprime: 8, 6
+    
+    return 0;
+}
