@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int Num, Dig1, Dig2;
+    cout << "Digite un numero entero: ";
+    cin >> Num;
+
+    if (Num >= 10 && Num <= 99) {
+        Dig1 = Num / 10;
+        Dig2 = Num % 10;
+
+        bool d1Primo = (Dig1 == 2 || Dig1 == 3 || Dig1 == 5 || Dig1 == 7);
+        bool d2Primo = (Dig2 == 2 || Dig2 == 3 || Dig2 == 5 || Dig2 == 7);
+
+        if (d1Primo && d2Primo) {
+            cout << "Los dos digitos son primos";
+        } else {
+            cout << "Uno de los dos digitos o ninguno de los dos digitos es primo";
+        }
+    } else {
+        cout << "El numero no es de dos digitos";
+    }
+    return 0;
+}
