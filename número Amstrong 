@@ -1,0 +1,35 @@
+#include <iostream>
+#include <cmath> 
+using namespace std;
+
+int main() {
+    int num, m, c, d, u;
+    int suma;
+
+    cout << "Ingrese un numero de 4 digitos: ";
+    cin >> num;
+
+    if (num < 1000 || num > 9999) {
+        cout << "ERROR: Debe ser de 4 digitos" << endl;
+        return 0;
+    }
+
+    // Separar digitos
+    m = num / 1000;
+    c = (num / 100) % 10;
+    d = (num / 10) % 10;
+    u = num % 10;
+
+    // Calcular suma de potencias 4
+    suma = pow(m,4) + pow(c,4) + pow(d,4) + pow(u,4);
+
+    cout << m << "^4 + " << c << "^4 + " << d << "^4 + " << u << "^4 = " << suma << endl;
+
+    if (suma == num) {
+        cout << num << " SI es un numero Armstrong" << endl;
+    } else {
+        cout << num << " NO es un numero Armstrong" << endl;
+    }
+
+    return 0;
+}
