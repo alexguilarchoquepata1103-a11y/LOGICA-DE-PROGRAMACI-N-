@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "n: ";
+    cin >> n;
+
+    int a = 3;
+    for (int i = 1; i <= n; i++) {
+        cout << a;
+        if (i < n) cout << ", ";
+
+        if (i % 2 == 1) a = a - 1; // impar -> -1
+        else            a = a + 2; // par -> +2
+    }
+    return 0;
+}
