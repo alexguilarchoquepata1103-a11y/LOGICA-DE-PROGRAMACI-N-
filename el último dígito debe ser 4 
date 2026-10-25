@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cstdlib> // para abs()
+
+using namespace std;
+
+int main() {
+    int Num;
+
+    cout << "Digite un numero entero: ";
+    cin >> Num;
+
+    // MOD 10 = residuo de dividir entre 10, nos da el ultimo digito
+    if (abs(Num % 10) == 4) {
+        cout << "El numero termina en 4";
+    } else {
+        cout << "El numero no termina en 4";
+    }
+
+    return 0;
+}
