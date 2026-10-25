@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int Num;
+    cout << "Digite un numero entero: ";
+    cin >> Num;
+
+    if (Num == -2 || Num == -3 || Num == -5 || Num == -7 || Num == -11 || Num == -13 || Num == -17 || Num == -19) {
+        cout << "El numero es primo y negativo";
+    } else {
+        cout << "El numero no es primo o no es negativo";
+    }
+    return 0;
+}
