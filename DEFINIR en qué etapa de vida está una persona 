@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int L;
+  
+  cout << "Ingresa tu edad: ";
+  cin >> L;
+
+  if (L <= 3) {
+    cout << "bebe";
+  } 
+  else if (L <= 14) {
+    cout << "niño";
+  } 
+  else if (L <= 18) {
+    cout << "joven";
+  } 
+  else if (L <= 65) {
+    cout << "adulto";
+  } 
+  else if (L <= 90) {
+    cout << "adulto mayor";
+  } 
+  else {
+    cout << "edad fuera de rango";
+  }
+
+  return 0;
+}
