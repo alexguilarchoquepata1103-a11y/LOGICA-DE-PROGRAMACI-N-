@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n=7;
+    char ini1='A', ini2='L';
+
+    for(int i=0; i <= n-1; i++){
+        for(int j=0; j <= n-1; j++){
+            if(i==0 || j==0 || j==n-1 || i==n/2) cout << "*";
+            else cout << " ";
+        }
+
+        cout << "   ";
+
+        for(int j=0; j <= n-1; j++){
+            if(j==0 || i==n-1) cout << "*";
+            else cout << " ";
+        }
+        cout << endl;
+    }
+}
