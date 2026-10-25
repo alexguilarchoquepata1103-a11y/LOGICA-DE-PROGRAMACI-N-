@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int Num, Dig1, Dig2;
+    cout << "Digite un numero entero: ";
+    cin >> Num;
+
+    if (Num < 0) {
+        Num = Num * -1;
+    }
+
+    if (Num >= 10 && Num <= 99) {
+        Dig1 = Num / 10;
+        Dig2 = Num % 10;
+
+        if (Dig1 % 2 == 0 && Dig2 % 2 == 0) {
+            cout << "Los dos digitos son pares";
+        } else {
+            cout << "Los dos digitos no son pares";
+        }
+    } else {
+        cout << "El numero no es de dos digitos";
+    }
+    return 0;
+}
