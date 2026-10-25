@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int Num, Dig1, Dig2, SumaD;
+    cout << "Digite un numero entero: ";
+    cin >> Num;
+
+    if (Num < 0) {
+        Num = Num * -1; // lo vuelve positivo
+    }
+
+    if (Num >= 10 && Num <= 99) {
+        Dig1 = Num / 10;   // decena
+        Dig2 = Num % 10;   // unidad
+        SumaD = Dig1 + Dig2;
+        cout << "La suma de los digitos es: " << SumaD;
+    } else {
+        cout << "El numero no es de dos digitos";
+    }
+    return 0;
+}
