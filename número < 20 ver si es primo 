@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int Num;
+    cout << "Digite un numero entero: ";
+    cin >> Num;
+
+    if (Num < 20) {
+        if (Num == 2 || Num == 3 || Num == 5 || Num == 7 || Num == 11 || Num == 13 || Num == 17 || Num == 19) {
+            cout << "El numero es primo y menor que 20";
+        } else {
+            cout << "El numero NO es primo, es menor que 20";
+        }
+    } else {
+        cout << "El numero NO es menor que 20";
+    }
+    return 0;
+}
