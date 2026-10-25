@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Ingrese n: ";
+    cin >> n; 
+
+    double suma = 0;
+
+    cout << "Serie: ";
+    for (int i = 1; i <= n; i++) {
+        double termino = (double)i / (n - i + 1);
+        
+       
+        switch(i % 2) {
+            case 1: 
+                suma += termino;
+                if(i > 1) cout << " + ";
+                break;
+            case 0:
+                suma -= termino;
+                cout << " - ";
+                break;
+        }
+        cout << i << "/" << n - i + 1;
+    }
+
+    cout << "\n\nResultado = " << suma << endl;
+    return 0;
+}
