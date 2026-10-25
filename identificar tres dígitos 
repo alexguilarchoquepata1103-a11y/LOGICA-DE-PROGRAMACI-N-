@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int Num;
+    cout << "Digite un numero entero: ";
+    cin >> Num;
+
+    // 100 a 999 o -100 a -999
+    if ((Num >= 100 && Num <= 999) || (Num >= -999 && Num <= -100)) {
+        cout << "El numero leido tiene 3 digitos";
+    } else {
+        cout << "El numero leido no tiene 3 digitos";
+    }
+    return 0;
+}
