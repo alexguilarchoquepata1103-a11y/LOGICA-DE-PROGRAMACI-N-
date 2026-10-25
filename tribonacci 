@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Cuantos terminos: ";
+    cin >> n;
+
+    long long a = 0, b = 0, c = 1; 
+
+    if (n >= 1) cout << a << " ";
+    if (n >= 2) cout << b << " ";
+    if (n >= 3) cout << c << " ";
+
+    for (int i = 3; i < n; i++) {
+        long long next = a + b + c;
+        cout << next << " ";
+        a = b;
+        b = c;
+        c = next;
+    }
+    return 0;
+}
