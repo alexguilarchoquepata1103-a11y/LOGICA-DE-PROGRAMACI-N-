@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int Num, Dig1, Dig2;
+    cout << "Digite un numero entero: ";
+    cin >> Num;
+
+    if (Num < 0) {
+        Num = Num * -1;
+    }
+
+    if (Num >= 10 && Num <= 99) {
+        Dig1 = Num / 10;
+        Dig2 = Num % 10;
+
+        // Evitar division por cero (ej: 20, 30, 40)
+        if (Dig1 == 0 || Dig2 == 0) {
+            cout << "Un digito es cero, no se puede determinar multiplo";
+        } else if (Dig1 % Dig2 == 0 || Dig2 % Dig1 == 0) {
+            cout << "Un digito es multiplo del otro";
+        } else {
+            cout << "Un digito NO es multiplo del otro";
+        }
+    } else {
+        cout << "El numero no es de dos digitos";
+    }
+    return 0;
+}
